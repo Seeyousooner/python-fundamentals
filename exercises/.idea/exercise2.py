@@ -1,22 +1,35 @@
-# 1.Write a function called simple(). Assign a different message to 5 variables and print each message.
-
 def simple():
-    """Display a simple message"""
-    print(f"{simple} are delicious!")
+    message1 = "ya yeet 1"
+    message2 = "ya ya yeet 2"
+    message3 = "ya ya ya yeet 3"
+    message4 = "ya ya ya ya yeet 4"
+    message5 = "ya ya ya ya ya yeet 5"
+    print(message1)
+    print(message2)
+    print(message3)
+    print(message4)
+    print(message5)
+
 
 simple()
 
 
-msg1 = "cupcakes"
-print(msg1)
-msg2 = "cookies"
-print(msg2)
-msg3 = "parfaits"
-print(msg3)
-msg4 = "eclairs"
-print(msg4)
-msg5 = "waffles"
-print(msg5)
+def simple2():
+    message1 = "ya yeet 1"
+    print(message1)
+    message1 = "ya ya yeet 2"
+    print(message1)
+    message1 = "ya ya ya yeet 3"
+    print(message1)
+    message1 = "ya ya ya ya yeet 4"
+    print(message1)
+
 
 simple2()
 
+
+def message(msg1):
+    print(msg1)
+
+
+message(msg1="ya yeet")
