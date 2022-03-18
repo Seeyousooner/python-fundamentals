@@ -1,10 +1,6 @@
-# Lab Exercise-Control Flow
-# Question 1- 5-3 Do it yourself
-# Imagine an alien was just shot down in a game. Create a variable
-# called alien_color and assign it a value of 'green', 'yellow', or 'red'.
+# Control Flow
+# 5-3
 
-# Part 1: Write an if statement to test whether the alien's color is green. If it is,
-# print a message that the player just earned 5 points.
 alien_color = ['green', 'red', 'yellow']
 if 'green' in alien_color:
     print('OVERKILL!!! YOU EARNED 5 POINTS')
@@ -16,25 +12,18 @@ if 'yellow' in alien_color:
 if 'pink' in alien_color:
     print('Your alien is pink')
 
-# Question 2: Try it yourself 5-4
-# Choose a color for an alien and write an if else statement
-# Part 1
+# 5-4
+
 if 'pink' in alien_color:
     print(' OVERKILL!!! YOU EARNED 5 POINTS')
 else:
     print('Your alien is now pink')
 
 
-# Part 2
-# If the alien's color isn't green, print a statement that the player just earned 10 points
 if 'red' in alien_color:
     print("OVERKILL!!! YOU EARNED 10 POINTS")
 elif 'yellow' in alien_color:
     print("OVERKILL!!! YOU EARNED 10 POINTS")
-
-# Part 3
-# Write one version of this program that runs the if block and another that runs the else block
-# if block
 
 
 def if_version():
@@ -46,24 +35,16 @@ def if_version():
     if 'Yellow' in alien_colors1:
         print("alien is yellow.")
 
-
 if_version()
 
-
-# else block
 def else_version(alien_color2):
     if alien_color2 == ['Green', 'Yellow', 'Red']:
         print("Your Alien is green. His name is Alan.")
     else:
         print("ALIEN DEAD.")
 
-
 else_version('pink')
 
-
-# Question 3: Try it yourself 5-5
-# Turn your if-else statement chain from 5-4 into an if-elif-else chain
-# If the alien is green print a message that says the player earned 5 points
 def green_alien():
     alien_color_1 = 'green'
     if 'green' in alien_color_1:
@@ -88,7 +69,6 @@ def yellow_alien():
     else:
         print('ALIEN DEAD')
 
-
 yellow_alien()
 
 def red_alien():
@@ -102,14 +82,10 @@ def red_alien():
     else:
         print("ALIEN DEAD.")
 
-
 red_alien()
 
+5-6
 
-# Question #4
-# Try it yourself 5-6
-# Write an if-elif-else chain that determines a person's stage of life. Set a value for the variable 'age' and then:
-# If the person is less than 2 years old, print a message that the person is a baby
 def stage_life():
     age = 12
     if age < 2:
@@ -125,29 +101,13 @@ def stage_life():
     elif age > 65:
         print('This person is an elder.')
 
-
 stage_life()
-
-
-# Question #5
-# Write a function that takes an argument. Check this argument to see if it is a Boolean using the bool method.
-# Call the method and use the below values as your argument. Using comments, provide the name of the argument and
-# if it was true or false from running the code.
-# 12, 1.2, 0, 0.4, 0.0
-
 
 def q5_question(arg1):
     print(bool(arg1))
-
 
 q5_question(12)
 q5_question(1.2)
 q5_question(0)
 q5_question(0.4)
 q5_question(0.0)
-
-# 12 = True
-# 1.2 = True
-# 0 = False
-# 0.4 = True
-# 0.0 = False
