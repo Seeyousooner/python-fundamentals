@@ -1,9 +1,6 @@
 # Classes and Functions
 # 8-3
-# Write a function called make_shirt() that accepts a size and the text of a message
-# that should be printed on the shirt. The function should print a sentence summarizing
-# the size of the shirt and the message printed.
-# Call the function once using positional arguments. Call it a second time using keyword args
+
 from typing import List
 
 
@@ -17,10 +14,6 @@ make_shirt('small', '"You Just Got Corduroyed!"')
 make_shirt(size='small', message='"You Just Got Corduroyed!"')
 
 # 8-4
-# Modify the make_shirt() function so that shirts are large by default with a message that reads
-# Memes Are Dead. Make a large shirt and a medium shirt with the default message, and a shirt
-# of any size with a different message.
-
 
 def make_shirt1(size='large', message='Memes Are Dead'):
     print('The shirt you ordered is a', size, 'and the message is', message)
@@ -31,10 +24,6 @@ make_shirt1(size='medium')
 make_shirt1(size='small', message='You Just Got Corduroyed!')
 
 # 8-5
-# Write a function called describe_city() that accepts the name of a city and its country.
-# The function should print a simple sentence. Give the parameter for the country a defalut value.
-# Call your function for three different cities, at least one of which is not the default country.
-
 
 def describe_city(city_name, city_country='USA'):
     print(city_name, 'is in', city_country)
@@ -46,8 +35,6 @@ describe_city('Katowice', 'Russia')
 
 
 # 8-9
-# 8-9: Make a list containing a series of short text messages. Pass the list to a function
-# called show_messages(), which prints each text message.
 
 def show_messages(text_message):
     for message in text_message:
@@ -58,10 +45,6 @@ text_messages = ['Today is the 17th.', 'Tommorow is the 18th.', 'The next day is
 show_messages(text_messages)
 
 # 8-10
-# Start with a copy of your program from Exercise 8-9. Write a function called send_messages()
-# that prints each text message and moves each message to a new list called sent_messages as it’s printed.
-# After calling the function, print both of your lists to make sure the messages were moved correctly.
-
 
 def show_messages(text_message):
     print('These are the text messages.')
